@@ -1,7 +1,24 @@
 import './itemDetail.css'
 import ItemCount from '../ItemCount/ItemCount.jsx'
+import { useState, useContext } from 'react'
+import { CartContext } from '../../context/CartContext'
+
 
 const ItemDetail = ({id, title, image, price, description, stock}) =>{
+
+    const [quantityAdded, setQuantityAdded] = useState(0)
+
+    const { addItem } = useContext(CartContext)
+
+    const handleOnAd = (quantity) => {
+        setQuantityAdded(quantity)
+
+        const item = {
+            id, title, price
+        }
+
+        addItem(item, quantity)
+    }
     return(
         <article>
             <div className="grid-ItemDetail">

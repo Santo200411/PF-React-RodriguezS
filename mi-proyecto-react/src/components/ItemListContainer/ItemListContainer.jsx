@@ -3,21 +3,21 @@ import './itemListContainer.css'
 import { getProductByCategory, getProducts } from '../asyncMock'
 import ItemList from '../ItemList/ItemList.jsx'
 import {useParams} from 'react-router-dom'
+import { db } from '../../firebase/client.jsx'
+import { getDocs, collection, query, where, limit, getDoc, doc} from 'firebase/firestore'
 
-const ItemListContainer =({greeting}) =>{
+
+const ItemListContainer =({}) =>{
   
     const [ products, setProducts] = useState([])
     const { categoryId }  = useParams()
     const [ filteredProducts, setFilteredProducts] = useState(null)
-
-
+/*     const productRef = doc(db, 'products', '2z54SFc5WeXtw8TDnY56')
+ */
         useEffect(() =>{
             getProducts().then(data => setProducts(data))
         }, [])
 
-        function useFilters() {
-
-        }
         
         useEffect(() =>{
            
@@ -25,12 +25,9 @@ const ItemListContainer =({greeting}) =>{
 
                 const filterProducts = products.filter(prod =>prod.category === categoryId)
                 setFilteredProducts(filterProducts)
-                console.log('1')
              } else {
                 setFilteredProducts(null)
-                console.log('2')
              }
-             console.log(categoryId)
 
         }, [categoryId, products])
 

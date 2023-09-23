@@ -1,3 +1,4 @@
+import { QueryEndAtConstraint } from "firebase/firestore";
 import { useState, useEffect } from "react";
 let productos;
 

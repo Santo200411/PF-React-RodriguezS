@@ -13,12 +13,9 @@ const ItemDetailContainer = () => {
   }, []);
 
   useEffect(() => {
-    console.log(itemId, products);
     if (itemId) {
       const filterProduct = products.find((prod) => prod.id == itemId);
-      console.log('holacomoestas', filterProduct)
       setProduct(filterProduct);
-      console.log(product);
     } else {
       setProduct(null);
 

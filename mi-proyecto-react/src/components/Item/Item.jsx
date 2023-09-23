@@ -1,23 +1,7 @@
 import './item.css'
 import ItemCount from '../ItemCount/ItemCount.jsx'
 import { Link } from 'react-router-dom'
-/* import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
 
-const MySwal = withReactContent(Swal) */
-/* let agregarBtn = document.getElementById('agregarBtn')
-
-agregarBtn.addEventListener("click", () => {
-   
-})
-
-let productosEnCarrito
-if(localStorage.getItem("carrito")){
-   productosEnCarrito = JSON.parse(localStorage.getItem("carrito"))
-}else{
-   productosEnCarrito = []
-   localStorage.setItem("carrito", productosEnCarrito)
-} */
 
 const Item = ({id, title, image, price, stock}) =>{
     return(
@@ -36,10 +20,10 @@ const Item = ({id, title, image, price, stock}) =>{
                     Price: ${price}
                 </p>
             </section>
-
+{/* 
             <section className='padding'>
                 <ItemCount initial={1} stock={10} id='agregarBtn' />
-            </section>
+            </section> */}
 
             <section className='padding'>
                 <Link to={`/item/${id}`} className='Option'> See Details </Link>
