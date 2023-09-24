@@ -10,11 +10,12 @@ const ItemDetail = ({id, title, image, price, description, stock}) =>{
 
     const { addItem } = useContext(CartContext)
 
-    const handleOnAd = (quantity) => {
+    const handleOnAdd = (quantity) => {
+        console.log(quantity)
         setQuantityAdded(quantity)
 
         const item = {
-            id, title, price
+            id, title, price, image
         }
 
         addItem(item, quantity)
@@ -36,7 +37,7 @@ const ItemDetail = ({id, title, image, price, description, stock}) =>{
                 
 
                 <div className="btn-ItemDetail">
-                    <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Productos agregados', quantity)} />
+                    <ItemCount initial={1} stock={50} onAdd={(quantity) => handleOnAdd(quantity)} />
                 </div>
             </div>
         </article>

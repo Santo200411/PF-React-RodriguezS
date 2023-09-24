@@ -18,7 +18,13 @@
 .center {
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
+}
+
+.logo{
+  color: white;
+  font-size: smaller;
 }
 
 .row {

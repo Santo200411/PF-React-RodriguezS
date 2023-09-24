@@ -1,50 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap");
 
-.card{
-    width: 280px;
-    min-height: 430px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    background-color:white;
-    overflow: hidden;
-    border-radius: 8px;
-    text-align: center;
-    transition: all 0.25s;
-    justify-content: center;
-    gap: 10px;
+.card {
+  width: 280px;
+  min-height: 430px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  overflow: hidden;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.25s;
+  justify-content: center;
+  gap: 10px;
 }
 
-.padding{
-    padding-top: 8px;
+.padding {
+  padding-top: 8px;
 }
 
-
-.card:hover{
-    border: 2px solid rgb(141, 141, 141);
-    box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.2);
+.card:hover {
+  border: 2px solid rgb(141, 141, 141);
+  box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card img{
-    padding-top: 10px;
-    height: 240px;
-    width: 80%; 
-    object-fit: contain;   
+.card img {
+  padding-top: 10px;
+  height: 240px;
+  width: 80%;
+  object-fit: contain;
 }
 
-.card h2 p{
-        color: black;
-    font-family: "lato", sans-serif;
-    
+.card h2 p {
+  color: black;
+  font-family: "lato", sans-serif;
 }
 
 .Option {
-    background-color: #0074D9;
-    border: none;
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    border-radius: 7px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-  
+  background-color: #0074d9;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 7px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

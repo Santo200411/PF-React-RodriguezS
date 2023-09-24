@@ -1,12 +1,20 @@
 import './nav.css'
-const cartWhite = 'https://w7.pngwing.com/pngs/139/420/png-transparent-white-shopping-cart-illustration-shopping-cart-computer-icons-white-cart-simple-miscellaneous-angle-white.png'
-const imgPath2 = 'https://cdn-icons-png.flaticon.com/512/263/263142.png'
+import { useState, useContext } from 'react'
+import { CartContext } from '../../context/CartContext'
+import { Link } from 'react-router-dom'
 
 const CartWidget = () => {
+
+    const { cart } = useContext(CartContext)
+
+    let cantidad = cart.length
+
     return(
         <div className='center cart'>
-            <i className="fa fa-shopping-cart"></i> 
-            <p id='numCarrito'>0</p>
+            <Link to={`/cart`}>
+                <i className="fa fa-shopping-cart"></i> 
+                <p id='numCarrito' className='cart'>{cantidad}</p>
+            </Link>
         </div>
     )
 }
