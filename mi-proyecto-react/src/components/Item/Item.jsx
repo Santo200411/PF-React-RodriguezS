@@ -20,10 +20,6 @@ const Item = ({id, title, image, price, stock}) =>{
                     Price: ${price}
                 </p>
             </section>
-{/* 
-            <section className='padding'>
-                <ItemCount initial={1} stock={10} id='agregarBtn' />
-            </section> */}
 
             <section className='padding'>
                 <Link to={`/item/${id}`} className='Option'> See Details </Link>

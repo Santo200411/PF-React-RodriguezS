@@ -10,10 +10,10 @@ const CartWidget = () => {
     let cantidad = cart.length
 
     return(
-        <div className='center cart'>
+        <div className='center num'>
             <Link to={`/cart`}>
                 <i className="fa fa-shopping-cart"></i> 
-                <p id='numCarrito' className='cart'>{cantidad}</p>
+                <p id='numCarrito' className='num'>{cantidad}</p>
             </Link>
         </div>
     )

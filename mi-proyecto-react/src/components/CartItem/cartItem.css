@@ -1,0 +1,10 @@
+.cartitem{
+    width: 65%;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 7px;
+    background-color: rgb(159, 168, 182);
+}

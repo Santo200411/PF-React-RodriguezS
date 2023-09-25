@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap");
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 280px;
   min-height: 430px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -24,7 +27,7 @@
 
 .card img {
   padding-top: 10px;
-  height: 240px;
+  height: 25vh;
   width: 80%;
   object-fit: contain;
 }
@@ -33,6 +36,17 @@
   color: black;
   font-family: "lato", sans-serif;
 }
+
+.card h2 {
+  /* Ajusta según tus necesidades */
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* número de líneas a mostrar */
+  -webkit-box-orient: vertical;
+}
+
 
 .Option {
   background-color: #0074d9;

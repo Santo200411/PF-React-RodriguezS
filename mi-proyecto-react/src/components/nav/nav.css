@@ -17,6 +17,7 @@
 
 .center {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -129,7 +130,7 @@
   list-style: none;
 }
 
-.cart{
+.num{
   gap: 5px;
   color: white;
 }
