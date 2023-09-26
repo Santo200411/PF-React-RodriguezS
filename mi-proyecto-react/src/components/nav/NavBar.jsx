@@ -10,7 +10,6 @@ const Navbar = () => {
             <NavLogo className='nav-left-top center'/>
 
             <div className='nav-center-top center'>
-
                 <input type="text" id="buscador" className='buscador' placeholder="Search..."/>       
                 <i className="fa fa-search search-hover"></i>
             </div>

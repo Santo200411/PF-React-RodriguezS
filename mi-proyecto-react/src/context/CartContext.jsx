@@ -29,8 +29,8 @@ export const CartProvider = ({children}) =>{
     }
 
     const total = (quantity, price) =>{
-        let total
-        total = total + quantity * price
+        let total = 0
+        total = total + Number(quantity) * Number(price);
         return total
     }
 

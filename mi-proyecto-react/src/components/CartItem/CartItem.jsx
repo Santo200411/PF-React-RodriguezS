@@ -24,7 +24,9 @@ const CartItem = ({ id, title, quantity, price }) => {
         <p>Subtotal: ${subtotal}</p>
       </div>
 
-      <button></button>
+      <button className="trash">
+        <i className="fa fa-trash" aria-hidden="true"></i>
+      </button>
     </section>
   );
 };

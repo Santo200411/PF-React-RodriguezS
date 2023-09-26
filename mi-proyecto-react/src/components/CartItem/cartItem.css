@@ -1,5 +1,5 @@
-.cartitem{
-    width: 65%;
+.cartItem{
+    width: 80%;
     height: 140px;
     display: flex;
     flex-direction: row;
@@ -7,4 +7,17 @@
     align-items: center;
     border-radius: 7px;
     background-color: rgb(159, 168, 182);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.trash{
+    border: none;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.trash:hover{
+    background-color: rgb(152, 157, 162);
 }

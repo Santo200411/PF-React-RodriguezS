@@ -11,21 +11,21 @@ const ItemListContainer =({}) =>{
   
     const [ products, setProducts] = useState([])
     const { categoryId }  = useParams()
-    const [ filteredProducts, setFilteredProducts] = useState(null)
+    const [ filteredProducts, setFilteredProducts] = useState(null)  
+
 /*     const productRef = doc(db, 'products', '2z54SFc5WeXtw8TDnY56')
  */
         useEffect(() =>{
             getProducts().then(data => setProducts(data))
         }, [])
-
+    
         
         useEffect(() =>{
            
             if (categoryId){
-
                 const filterProducts = products.filter(prod =>prod.category === categoryId)
                 setFilteredProducts(filterProducts)
-             } else {
+             }  else {
                 setFilteredProducts(null)
              }
 
