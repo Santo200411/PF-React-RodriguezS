@@ -35,8 +35,12 @@ export const CartProvider = ({children}) =>{
     }
 
     const removeItem = (itemId) => {
+        if (cart.length > 1){
          const cartUpdated = cart.filter(prod => prod.id !== itemId)
          setCart(cartUpdated)
+        } else{
+          setCart([])
+        }
     }
 
     const clearCart = () => {
