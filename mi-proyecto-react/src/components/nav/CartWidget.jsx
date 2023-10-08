@@ -5,15 +5,19 @@ import { Link } from 'react-router-dom'
 
 const CartWidget = () => {
 
-    const { cart } = useContext(CartContext)
+    const { totalQuantity } = useContext(CartContext)
 
-    let cantidad = cart.length
+    let total = 0
+    
+    if (totalQuantity() > 0){
+        total = totalQuantity()
+    } 
 
     return(
         <div className='center num'>
             <Link to={`/cart`}>
                 <i className="fa fa-shopping-cart"></i> 
-                <p id='numCarrito' className='num'>{cantidad}</p>
+                <p id='numCarrito' className='num'>{total}</p>
             </Link>
         </div>
     )
